@@ -9,7 +9,7 @@ module.exports = {
     siteTitle: `Let's Talk`,
     siteTitleAlt: `¡Hola Mundo!`,
     author: 'Alejandro Vélez-Calderón',
-    siteImage: '/tomorrow.jpeg',
+    siteImage: '/de-luto.jpeg',
     siteDescription: `Blog simplístico para la discusión de pensamientos.`,
     siteUrl: `https://pelau.app`,
     siteLanguage: 'en',
@@ -51,9 +51,9 @@ module.exports = {
         display: `standalone`,
         icons: [
           {
-            src: `/garita.jpg`,
+            src: `/android-chrome-192x192.png`,
             sizes: `192x192`,
-            type: `image/jpg`,
+            type: `image/png`,
           },
           {
             src: `/android-chrome-512x512.png`,
