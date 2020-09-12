@@ -6,8 +6,14 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Ale - Minimal Blog`,
-    siteTitle: 'Ale',
+    siteTitle: `Let's Talk`,
+    siteTitleAlt: `¡Hola Mundo!`,
+    author: 'Alejandro Vélez-Calderón',
+    siteImage: '/tomorrow.jpeg',
+    siteDescription: `Blog simplístico para la discusión de pensamientos.`,
+    siteUrl: `https://pelau.app`,
+    siteLanguage: 'en',
+    siteHeadline: '¡Hola Mundo!'
   },
   plugins: [
     {
@@ -20,8 +26,8 @@ module.exports = {
             slug: `/blog`,
           },
           {
-            title: `About`,
-            slug: `/about`,
+            title: `Nosotros`,
+            slug: `/sobre-nosotros`,
           },
         ],
         externalLinks: [
@@ -32,28 +38,22 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      },
-    },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
         short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        description: `Blog simplístico para la discusión de pensamientos.`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
         display: `standalone`,
         icons: [
           {
-            src: `/android-chrome-192x192.png`,
+            src: `/garita.jpg`,
             sizes: `192x192`,
-            type: `image/png`,
+            type: `image/jpg`,
           },
           {
             src: `/android-chrome-512x512.png`,
